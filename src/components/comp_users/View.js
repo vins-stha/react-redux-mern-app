@@ -40,18 +40,6 @@ export default function View() {
 
     }
     const users = allUsers.length > 0 ? (allUsers.map((user, key) => {
-        // return (
-        //     <div key={user._id} style={{ border: "1px solid black", margin: "10px" }}>
-        //         <h1>{user.name},</h1><h4>{user.city} </h4>
-         
-        //         <Link to={`/editUser/${user._id}`}>
-        //             <button name="edit" value="edit">edit</button>
-        //         </Link>
-        //         <button name="edit" value="edit" onClick={(e)=>{handleDelete(user._id)}}>Delete</button>
-
-
-        //     </div>
-        // )
         return (
             <tr key={user._id} style={{ border: "1px solid black", margin: "10px" }} className="tableData">
                 <td scope="row">{user.name}</td>
@@ -77,9 +65,9 @@ export default function View() {
             <table className="table table-hover">
                 <thead>
                     <tr>
-                        <th scope="col">Username</th>
-                        <th scope="col">City</th>
-                        <th scope="col">Actions</th>
+                        <th>Username</th>
+                        <th>City</th>
+                        <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>

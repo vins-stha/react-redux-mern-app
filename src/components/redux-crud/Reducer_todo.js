@@ -14,13 +14,13 @@ function todoReducer(state=initialState, action)
         case "DELETE_TASK": return {
            
             ...state,
-            tasks: state.tasks.filter((task)=>task != action.payload)
+            tasks: state.tasks.filter((task)=>task !== action.payload)
         }
         case "UPDATE_TASK": return {
            
             ...state,
             tasks: state.tasks.map((task)=>{
-                if (task == action.payload.old)
+                if (task === action.payload.old)
                     task = action.payload.updated
                     return task
             })

@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import { Link, Route, Redirect, useParams,useHistory } from 'react-router-dom'
+import { Link, Route, Redirect, useParams, useHistory } from 'react-router-dom'
 
 export default function Edit() {
     const [user, setUser] = useState([])
@@ -9,17 +9,16 @@ export default function Edit() {
     const params = useParams()
     const history = useHistory()
     useEffect(() => {
-       console.log('params::',params)
-       var data = params.id
-        axios.post('https://simple-mern-redux-app.herokuapp.com//users/findUser',{user_id: params.id})
-        .then((res) => {
-            console.log('Edit response=>',res.data[0].name)
-            setName(res.data[0].name)
-            setCity(res.data[0].city)
+        console.log('params::', params)
+        var data = params.id
+        axios.post('https://simple-mern-redux-app.herokuapp.com//users/findUser', { user_id: params.id })
+            .then((res) => {
+                console.log('Edit response=>', res.data[0].name)
+                setName(res.data[0].name)
+                setCity(res.data[0].city)
+            })
+            .catch((err) => { console.log('errour=>', err) })
 
-        })
-        .catch((err) => { console.log('errour=>', err) })
-       
     }, [])
 
     function handleClick(e) {
@@ -32,14 +31,12 @@ export default function Edit() {
 
         axios.post('http://localhost:1000/users/updateUser', data)
             .then((res) => {
-                console.log('res=>',res.data)
+                console.log('res=>', res.data)
                 history.go(-1)
 
             })
-            .catch((err) => { console.log('errour=>', err) })    
-        }
-
-
+            .catch((err) => { console.log('errour=>', err) })
+    }
     return (
         <div className="container">
             <h1 className="projectTitle">First MERN project</h1>
