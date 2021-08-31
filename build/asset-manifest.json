@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/react-redux-mern/static/css/main.c695cdc0.chunk.css",
+    "main.js": "/react-redux-mern/static/js/main.c5ad5c07.chunk.js",
+    "main.js.map": "/react-redux-mern/static/js/main.c5ad5c07.chunk.js.map",
+    "runtime-main.js": "/react-redux-mern/static/js/runtime-main.f4212fe9.js",
+    "runtime-main.js.map": "/react-redux-mern/static/js/runtime-main.f4212fe9.js.map",
+    "static/css/2.f3d634d7.chunk.css": "/react-redux-mern/static/css/2.f3d634d7.chunk.css",
+    "static/js/2.cfda528b.chunk.js": "/react-redux-mern/static/js/2.cfda528b.chunk.js",
+    "static/js/2.cfda528b.chunk.js.map": "/react-redux-mern/static/js/2.cfda528b.chunk.js.map",
+    "static/js/3.a5bebe6a.chunk.js": "/react-redux-mern/static/js/3.a5bebe6a.chunk.js",
+    "static/js/3.a5bebe6a.chunk.js.map": "/react-redux-mern/static/js/3.a5bebe6a.chunk.js.map",
+    "index.html": "/react-redux-mern/index.html",
+    "static/css/2.f3d634d7.chunk.css.map": "/react-redux-mern/static/css/2.f3d634d7.chunk.css.map",
+    "static/css/main.c695cdc0.chunk.css.map": "/react-redux-mern/static/css/main.c695cdc0.chunk.css.map",
+    "static/js/2.cfda528b.chunk.js.LICENSE.txt": "/react-redux-mern/static/js/2.cfda528b.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/react-redux-mern/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f4212fe9.js",
+    "static/css/2.f3d634d7.chunk.css",
+    "static/js/2.cfda528b.chunk.js",
+    "static/css/main.c695cdc0.chunk.css",
+    "static/js/main.c5ad5c07.chunk.js"
+  ]
+}
